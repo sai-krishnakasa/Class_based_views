@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {%block title %}
+        Review__list_Page
+    {%endblock%}
+</head>
+https://github.com/AkashPanwar09/HexaTrainerOfficial.git
+<body>
+    {% block content%}
+    <form action=" " method="post">
+        {% if error in error_messages%}
+            {{error}}
+        {% endif %}
+        {% for field in form%} 
+        {% csrf_token %}
+            {{field.label}}
+            {{field}}
+            <br>
+        {% endfor %}
+        <input type="submit" value="submit" >
+    
+    {% endblock %}
+</form>
+</body>
+</html>

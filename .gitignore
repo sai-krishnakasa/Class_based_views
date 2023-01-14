@@ -1,0 +1,9 @@
+db.sqlite3
+.vscode
+app/__pycache__
+app/migrations
+app/models.py
+app/tests.py
+app/urls.py
+app/views.py
+class_based_views/__pycache__
